@@ -9,11 +9,18 @@ import application.model.AlunoRepository;
 @Controller
 @RequestMapping("/aluno")
 public class AlunoController {
+    @RequestMapping("/insert")
+    public String insert() {
+        return "/aluno/insert";
+    }
+ }
+/* 
+@RequestMapping("/aluno")
+public class AlunoController {
     @Autowired
     private AlunoRepository alunoRepo;
 
     @RequestMapping("/list")
     public String list() {
         return "/aluno/list";
-    }
-}
+    } */
